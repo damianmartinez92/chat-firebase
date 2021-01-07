@@ -6,23 +6,25 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <span className="navbar-brand">Chat Firebase</span>
-      <div>
-        {usuario.estado ? (
-          <button
-            className="btn btn-outline-danger my-2"
-            onClick={cerrarSesion}
-          >
-            Cerrar Sesión
-          </button>
-        ) : (
-          <button
-            className="btn btn-outline-success my-2"
-            onClick={iniciarSesion}
-          >
-            Acceder
-          </button>
-        )}
+      <div className="container-fluid">
+        <span className="navbar-brand">Chat Firebase</span>
+        <div>
+          {usuario.estado ? (
+            <button
+              className="btn btn-outline-danger my-2"
+              onClick={cerrarSesion}
+            >
+              Cerrar Sesión
+            </button>
+          ) : (
+            <button
+              className="btn btn-outline-success my-2"
+              onClick={iniciarSesion}
+            >
+              Acceder
+            </button>
+          )}
+        </div>
       </div>
     </nav>
   );
