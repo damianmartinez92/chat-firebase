@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <span className="navbar-brand">Chat</span>
+      <span className="navbar-brand">Chat Firebase</span>
       <div>
         {usuario.estado ? (
           <button
